@@ -89,8 +89,36 @@ $textColor: #01207C;
     }
 }
 
+#navHeader {
+    display: none;
+}
+
 @media screen and (max-width: 1100px) {
     #homeMain {
         flex: unset;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #navHeader {
+        display: block;
+    }
+
+    #indexHeader {
+        display: none;
+    }
+
+    #homeMain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #homePhoto {
+        width: 90%;
+    }
+
+    #homeNav {
+        display: none;
     }
 }
