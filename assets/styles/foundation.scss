@@ -170,6 +170,7 @@ h1 {
 }
 
 footer {
+    position: relative;
     flex-shrink: 0;
     color: $white;
     background-image: linear-gradient(to bottom right, $primary, $secondary);

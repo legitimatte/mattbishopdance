@@ -183,6 +183,7 @@ h1 img:hover {
 }
 
 footer {
+  position: relative;
   flex-shrink: 0;
   color: #DFDFDF;
   background-image: linear-gradient(to bottom right, #285480, #01207C);

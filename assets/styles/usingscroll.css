@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
 input {
   display: none;
   visibility: hidden;
@@ -13,27 +8,16 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  perspective: 1px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  transform-style: preserve-3d;
+  z-index: 5;
 }
 
 #heroImage {
-  width: 100%;
-  margin: 0 0 2% 0;
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  transform-style: preserve-3d;
+  overflow: hidden;
 }
 #heroImage img {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  transform: translateZ(-1px) scale(2);
+  transform: translateY(20%) scale(1.4);
+  transform-origin: right;
 }
 
 #photoContent {
@@ -41,32 +25,9 @@ input {
   flex-wrap: wrap;
   justify-content: space-around;
   transition: 0.8s;
-  position: absolute;
-  z-index: 5;
   background-image: linear-gradient(to right, #fff, #DFDFDF);
-  box-shadow: 0 0 20px #181818;
+  box-shadow: 0 -10px 20px #181818;
   padding: 2% 0 0 0;
-  width: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-}
-#photoContent #input1:empty ~ #img1,
-#photoContent #input2:empty ~ #img2,
-#photoContent #input3:empty ~ #img3,
-#photoContent #input4:empty ~ #img4,
-#photoContent #input5:empty ~ #img5,
-#photoContent #input6:empty ~ #img6,
-#photoContent #input7:empty ~ #img7,
-#photoContent #input8:empty ~ #img8,
-#photoContent #input9:empty ~ #img9,
-#photoContent #input10:empty ~ #img10,
-#photoContent #input11:empty ~ #img11,
-#photoContent #input12:empty ~ #img12,
-#photoContent #input13:empty ~ #img13,
-#photoContent #input14:empty ~ #img14,
-#photoContent #input15:empty ~ #img15 {
-  padding: unset;
-  background-image: unset;
 }
 #photoContent #input1:checked ~ #img1,
 #photoContent #input2:checked ~ #img2,
@@ -88,6 +49,7 @@ input {
   padding: 40% 50%;
   background-image: linear-gradient(to right, #ffffff, #DFDFDF);
   box-sizing: border-box;
+  box-shadow: 0 0 20px #181818;
 }
 #photoContent #input1:checked ~ #img1 img,
 #photoContent #input2:checked ~ #img2 img,
@@ -104,6 +66,7 @@ input {
 #photoContent #input13:checked ~ #img13 img,
 #photoContent #input14:checked ~ #img14 img,
 #photoContent #input15:checked ~ #img15 img {
+  margin: 5% 0;
   position: absolute;
   top: 0;
   left: 25%;
@@ -348,4 +311,4 @@ input {
   width: 100%;
   box-shadow: 5px 5px 8px #181818;
   cursor: pointer;
-}/*# sourceMappingURL=photopage.css.map */
+}/*# sourceMappingURL=usingscroll.css.map */

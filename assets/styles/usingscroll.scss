@@ -5,11 +5,6 @@ $primary: #285480;
 $secondary: #01207C;
 $textColor: #01207C;
 
-body {
-    margin: 0;
-    overflow-x: hidden;
-}
-
 input {
     display: none;
     visibility: hidden;
@@ -23,6 +18,7 @@ input {
     // margin: 2% auto;
     // font-family: 'Kanit', sans-serif;
     // background-color: red;
+    z-index: 5;
 
     // h2 {
     //     width: 50%;
@@ -33,30 +29,15 @@ input {
     //     text-shadow: 0.5px 0.5px 0px $black;
     //     // background-color: purple;
     // }
-
-    width: 100vw;
-    height: 100vh;
-    perspective: 1px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    transform-style: preserve-3d;
 }
 
 #heroImage {
-    width: 100%;
-    // background-color: red;
-    margin: 0 0 2% 0;
-    
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    transform-style: preserve-3d;
+    overflow: hidden;
 
     img {
         width: 100%;
-        height: 100%;
-        position: absolute;
-        transform: translateZ(-1px) scale(2);
+        transform: translateY(20%) scale(1.4);
+        transform-origin: right;
     }
 }
 
@@ -65,34 +46,9 @@ input {
     flex-wrap: wrap;
     justify-content: space-around;
     transition: 0.8s;
-    position: absolute;
-    z-index: 5;
     background-image: linear-gradient(to right, #fff, $white);
-    box-shadow: 0 0 20px $black;
+    box-shadow: 0 -10px 20px $black;
     padding: 2% 0 0 0;
-
-    width: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-
-    #input1:empty ~ #img1,
-    #input2:empty ~ #img2,
-    #input3:empty ~ #img3,
-    #input4:empty ~ #img4,
-    #input5:empty ~ #img5,
-    #input6:empty ~ #img6,
-    #input7:empty ~ #img7,
-    #input8:empty ~ #img8,
-    #input9:empty ~ #img9,
-    #input10:empty ~ #img10,
-    #input11:empty ~ #img11,
-    #input12:empty ~ #img12,
-    #input13:empty ~ #img13,
-    #input14:empty ~ #img14,
-    #input15:empty ~ #img15 {
-        padding: unset;
-        background-image: unset;
-    }
 
     #input1:checked ~ #img1,
     #input2:checked ~ #img2,
@@ -114,8 +70,10 @@ input {
         padding: 40% 50%;
         background-image: linear-gradient(to right, #ffffff, $white);
         box-sizing: border-box;
+        box-shadow: 0 0 20px $black;
 
         img {
+            margin: 5% 0;
             position: absolute;
             top: 0;
             left: 25%;
