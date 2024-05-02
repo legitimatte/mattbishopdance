@@ -13,16 +13,6 @@ $textColor: #01207C;
     margin: 2% auto;
     font-family: 'Kanit', sans-serif;
     // background-color: red;
-
-    h2 {
-        width: 50%;
-        color: $primary;
-        font-size: 42px;
-        margin: 0 0 2% 0;
-        text-align: center;
-        text-shadow: 0.5px 0.5px 0px $black;
-        // background-color: purple;
-    }
 }
 
 #projectContent {
@@ -30,13 +20,45 @@ $textColor: #01207C;
     flex-direction: column;
     align-items: center;
 
-    img {
-        width: 55%;
-        width: 350px;
-        width: clamp(250px, 80%, 60rem);
-        margin: 1% 0;
-        border: 2px solid $black;
-        box-shadow: 5px 5px 8px $black;
-    }
+    // .divider {
+    //     width: 40%;
+    //     height: 2px;
+    //     margin: 2% 0;
+    //     background-color: #000000;
+    // }
 
+    .project {
+        // width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 2% 0;
+        // background-color: #ffffff;
+        // padding: 4%;
+        // border: 2px solid #000;
+        // box-shadow: 5px 5px 8px $black;
+
+        h2 {
+            width: 50%;
+            color: $primary;
+            font-size: 48px;
+            text-align: center;
+            text-shadow: 0.5px 0.5px 0px $black;
+            // background-color: purple;
+        }
+
+        video {
+            width: 50%;
+            // width: 55%;
+            // width: 350px;
+            // width: clamp(250px, 80%, 60rem);
+            margin: 1% 0;
+            border: 2px solid $black;
+            box-shadow: 5px 5px 8px $black;
+        }
+
+        p {
+            font-size: 28px;
+        }
+    }
 }
